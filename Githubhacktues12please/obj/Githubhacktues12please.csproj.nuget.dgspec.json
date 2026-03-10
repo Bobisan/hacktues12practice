@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tester\\source\\repos\\Githubhacktues12please\\Githubhacktues12please\\Githubhacktues12please.csproj": {}
+    "C:\\Users\\tester\\source\\repos\\Please\\Githubhacktues12please\\Githubhacktues12please.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tester\\source\\repos\\Githubhacktues12please\\Githubhacktues12please\\Githubhacktues12please.csproj": {
+    "C:\\Users\\tester\\source\\repos\\Please\\Githubhacktues12please\\Githubhacktues12please.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tester\\source\\repos\\Githubhacktues12please\\Githubhacktues12please\\Githubhacktues12please.csproj",
+        "projectUniqueName": "C:\\Users\\tester\\source\\repos\\Please\\Githubhacktues12please\\Githubhacktues12please.csproj",
         "projectName": "Githubhacktues12please",
-        "projectPath": "C:\\Users\\tester\\source\\repos\\Githubhacktues12please\\Githubhacktues12please\\Githubhacktues12please.csproj",
+        "projectPath": "C:\\Users\\tester\\source\\repos\\Please\\Githubhacktues12please\\Githubhacktues12please.csproj",
         "packagesPath": "C:\\Users\\tester\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tester\\source\\repos\\Githubhacktues12please\\Githubhacktues12please\\obj\\",
+        "outputPath": "C:\\Users\\tester\\source\\repos\\Please\\Githubhacktues12please\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -50,6 +50,16 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "React.Web": {
+              "target": "Package",
+              "version": "[5.2.12, )"
+            },
+            "React.Web.Mvc4": {
+              "target": "Package",
+              "version": "[5.2.12, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
