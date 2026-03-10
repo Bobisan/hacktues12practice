@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Hack-Tues-test")(type "KiCad")(uri "${KIPRJMOD}/Hack-Tues-test.kicad_sym")(options "")(descr ""))
+)

@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Hacktues-test")(type "KiCad")(uri "${KIPRJMOD}/Hacktues-test.pretty")(options "")(descr ""))
+)
