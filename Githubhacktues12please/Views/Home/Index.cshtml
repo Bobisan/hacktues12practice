@@ -23,12 +23,21 @@
             <form asp-action="UpdateHz" asp-controller="Home" method="post">
                 <div class="slider-block">
                     <div class="value" id="val">1</div>
+<<<<<<< HEAD
                     <input asp-for="Multiplier" class="slider" id="slider" type="range" min="0" max="2" step="0.01" value="1" />
                 </div>
 
                 <button type="submit" class="action-button" id="changeBtn"><span>CHANGE</span></button>
 
                 <button class="toggle" id="toggle" type="button"><span>OFF</span></button>
+=======
+                    <input asp-for="Multiplier" class="slider" id="slider" type="range" min="0" max="2" step="0.25" value="1" />
+                </div>
+
+                <button type="submit" class="action-button" id="changeBtn">CHANGE</button>
+
+                <button class="toggle" id="toggle" type="button">OFF</button>
+>>>>>>> 089dedca88d3b54be5f276f05ffca6082294c055
             </form>
 
         </div>
@@ -41,3 +50,56 @@
 
 </body>
 </html>
+
+               @*  @model Githubhacktues12please.Models.DTOs.MultiplierDTO
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stillform</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="~/css/style.css" />
+</head>
+
+<body>
+
+    <canvas id="bg"></canvas>
+
+    <div class="wrapper">
+
+        <div class="controls">
+
+            <form asp-action="UpdateHz" asp-controller="Home" method="post">
+                <div class="slider-block">
+                    <div class="value" id="val">1</div>
+                    <input asp-for="Multiplier" class="slider" id="slider" type="range" min="0" max="2" step="0.01" value="1" />
+                </div>
+
+                <button type="submit" class="action-button" id="changeBtn">CHANGE</button>
+
+                <button class="toggle" id="toggle" type="button">OFF</button>
+            </form>
+
+        </div>
+
+    </div>
+
+    <div class="footer">Burgaskite Glarusi 2026© All rights reserved</div>
+
+    <script src="~/js/script.js"></script>
+
+</body>
+</html>
+
+<div class="slider-block">
+                <div class="value" id="val">1</div>
+                <input class="slider" id="slider" type="range" min="0" max="2" step="0.01" value="1" asp-for="Multiplier">
+            </div>
+
+            <button class="action-button" id="changeBtn" method="Post" asp-action="UpdateHz" asp-controller="Home">CHANGE</button>
+
+            <button class="toggle" id="toggle">OFF</button>*@
