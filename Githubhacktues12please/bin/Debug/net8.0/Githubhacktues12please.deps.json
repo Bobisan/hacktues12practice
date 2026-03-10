@@ -78,8 +78,12 @@
       "K4os.Compression.LZ4.Streams/1.3.8": {
         "dependencies": {
           "K4os.Compression.LZ4": "1.3.8",
+<<<<<<< HEAD
+          "K4os.Hash.xxHash": "1.0.8"
+=======
           "K4os.Hash.xxHash": "1.0.8",
           "System.IO.Pipelines": "6.0.3"
+>>>>>>> 089dedca88d3b54be5f276f05ffca6082294c055
         },
         "runtime": {
           "lib/net6.0/K4os.Compression.LZ4.Streams.dll": {
@@ -274,6 +278,10 @@
           }
         }
       },
+<<<<<<< HEAD
+      "System.Configuration.ConfigurationManager/8.0.0": {
+        "dependencies": {
+=======
       "runtime.native.System/4.0.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1",
@@ -295,6 +303,7 @@
       "System.Configuration.ConfigurationManager/8.0.0": {
         "dependencies": {
           "System.Diagnostics.EventLog": "8.0.0",
+>>>>>>> 089dedca88d3b54be5f276f05ffca6082294c055
           "System.Security.Cryptography.ProtectedData": "8.0.0"
         },
         "runtime": {
@@ -304,6 +313,8 @@
           }
         }
       },
+<<<<<<< HEAD
+=======
       "System.Diagnostics.Debug/4.0.11": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1",
@@ -508,6 +519,7 @@
           "runtime.native.System": "4.0.0"
         }
       },
+>>>>>>> 089dedca88d3b54be5f276f05ffca6082294c055
       "System.Security.Cryptography.ProtectedData/8.0.0": {
         "runtime": {
           "lib/net8.0/System.Security.Cryptography.ProtectedData.dll": {
@@ -527,6 +539,8 @@
           }
         }
       },
+<<<<<<< HEAD
+=======
       "System.Text.Encoding/4.0.11": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1",
@@ -547,6 +561,7 @@
           "System.Runtime": "4.1.0"
         }
       },
+>>>>>>> 089dedca88d3b54be5f276f05ffca6082294c055
       "System.Windows.Extensions/8.0.0": {
         "runtime": {
           "lib/net8.0/System.Windows.Extensions.dll": {
@@ -737,6 +752,8 @@
       "path": "react.web.mvc4/5.2.12",
       "hashPath": "react.web.mvc4.5.2.12.nupkg.sha512"
     },
+<<<<<<< HEAD
+=======
     "runtime.native.System/4.0.0": {
       "type": "package",
       "serviceable": true,
@@ -758,6 +775,7 @@
       "path": "system.collections/4.0.11",
       "hashPath": "system.collections.4.0.11.nupkg.sha512"
     },
+>>>>>>> 089dedca88d3b54be5f276f05ffca6082294c055
     "System.Configuration.ConfigurationManager/8.0.0": {
       "type": "package",
       "serviceable": true,
@@ -765,6 +783,8 @@
       "path": "system.configuration.configurationmanager/8.0.0",
       "hashPath": "system.configuration.configurationmanager.8.0.0.nupkg.sha512"
     },
+<<<<<<< HEAD
+=======
     "System.Diagnostics.Debug/4.0.11": {
       "type": "package",
       "serviceable": true,
@@ -933,6 +953,7 @@
       "path": "system.runtime.interopservices.runtimeinformation/4.0.0",
       "hashPath": "system.runtime.interopservices.runtimeinformation.4.0.0.nupkg.sha512"
     },
+>>>>>>> 089dedca88d3b54be5f276f05ffca6082294c055
     "System.Security.Cryptography.ProtectedData/8.0.0": {
       "type": "package",
       "serviceable": true,
@@ -947,6 +968,8 @@
       "path": "system.security.permissions/8.0.0",
       "hashPath": "system.security.permissions.8.0.0.nupkg.sha512"
     },
+<<<<<<< HEAD
+=======
     "System.Text.Encoding/4.0.11": {
       "type": "package",
       "serviceable": true,
@@ -968,6 +991,7 @@
       "path": "system.threading.tasks/4.0.11",
       "hashPath": "system.threading.tasks.4.0.11.nupkg.sha512"
     },
+>>>>>>> 089dedca88d3b54be5f276f05ffca6082294c055
     "System.Windows.Extensions/8.0.0": {
       "type": "package",
       "serviceable": true,

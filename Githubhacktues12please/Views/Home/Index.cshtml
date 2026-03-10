@@ -23,12 +23,21 @@
             <form asp-action="UpdateHz" asp-controller="Home" method="post">
                 <div class="slider-block">
                     <div class="value" id="val">1</div>
+<<<<<<< HEAD
+                    <input asp-for="Multiplier" class="slider" id="slider" type="range" min="0" max="2" step="0.01" value="1" />
+                </div>
+
+                <button type="submit" class="action-button" id="changeBtn"><span>CHANGE</span></button>
+
+                <button class="toggle" id="toggle" type="button"><span>OFF</span></button>
+=======
                     <input asp-for="Multiplier" class="slider" id="slider" type="range" min="0" max="2" step="0.25" value="1" />
                 </div>
 
                 <button type="submit" class="action-button" id="changeBtn">CHANGE</button>
 
                 <button class="toggle" id="toggle" type="button">OFF</button>
+>>>>>>> 089dedca88d3b54be5f276f05ffca6082294c055
             </form>
 
         </div>

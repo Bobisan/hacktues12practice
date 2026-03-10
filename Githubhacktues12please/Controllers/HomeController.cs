@@ -32,13 +32,21 @@ namespace Githubhacktues12please.Controllers
         [HttpPost]
         public IActionResult UpdateHz(MultiplierDTO dto)
         {
+<<<<<<< HEAD
+            /*con.Open();
+=======
             con.Open();
+>>>>>>> 089dedca88d3b54be5f276f05ffca6082294c055
             Hz result = _multiplierService.MultyplyHz(Hz, dto.Multiplier);
             MySqlCommand cmd = new MySqlCommand("INSERT INTO `data` (value, description) VALUES (@value, @description);", con);
             cmd.Parameters.AddWithValue("@value", result.hz);
             cmd.Parameters.AddWithValue("@description", $"Multiplied {Hz} by {dto.Multiplier} to get {result.hz}");
             cmd.ExecuteNonQuery();
+<<<<<<< HEAD
+            con.Close();*/
+=======
             con.Close();
+>>>>>>> 089dedca88d3b54be5f276f05ffca6082294c055
             return RedirectToAction("Index");
         }
 
