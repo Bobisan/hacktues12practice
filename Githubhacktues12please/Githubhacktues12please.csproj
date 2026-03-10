@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="9.6.0" />
     <PackageReference Include="React.Web" Version="5.2.12" />
     <PackageReference Include="React.Web.Mvc4" Version="5.2.12" />
   </ItemGroup>

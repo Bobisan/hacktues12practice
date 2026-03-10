@@ -2,6 +2,6 @@
 {
     public class Multiplier
     {
-        public decimal multiplier { get; set; }
+        public float multiplier { get; set; }
     }
 }

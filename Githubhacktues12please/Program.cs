@@ -1,10 +1,12 @@
-var builder = WebApplication.CreateBuilder(args);
+using Githubhacktues12please.Services;
 
+var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddTransient<IMultiplyService, MultiplyService>();
 //test for github hacktues 12 please
 var app = builder.Build();
-
+Console.WriteLine("Hello World!"); //test for github hacktues 12 please
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
