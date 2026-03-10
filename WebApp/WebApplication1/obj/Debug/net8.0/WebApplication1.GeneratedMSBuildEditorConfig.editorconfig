@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /home/caparo/Projects/hacktues12practice/WebApp/WebApplication1
 build_property._RazorSourceGeneratorDebug = 
 
+[/home/caparo/Projects/hacktues12practice/WebApp/WebApplication1/Views/Home/CreateExpense.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9DcmVhdGVFeHBlbnNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/caparo/Projects/hacktues12practice/WebApp/WebApplication1/Views/Home/Expenses.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9FeHBlbnNlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
