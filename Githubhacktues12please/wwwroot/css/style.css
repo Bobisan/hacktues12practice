@@ -9,8 +9,7 @@ body {
     background: #083338;
     font-family: 'Inter',sans-serif;
     color: #F0EBE3;
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,18 +22,24 @@ canvas {
 }
 
 .wrapper {
-    position: relative;
+    /* absolutely cover the viewport so centering is predictable */
+    position: absolute;
+    inset: 0;
     z-index: 1;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+/* Make the wrapper span the full viewport so its children can be perfectly centered */
+/* removed duplicate .wrapper block; .wrapper now absolutely covers the viewport */
+
 .controls {
     display: flex;
     align-items: center;
     justify-content: center; /* ensures centered layout */
-    gap: 30px; /* more space between all controls */
+    gap: 40px; /* more space between all controls */
+    /* let the flex container size itself naturally; centering is handled by .wrapper */
 }
 
 .toggle {
