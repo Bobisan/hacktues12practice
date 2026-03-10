@@ -2,7 +2,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
+//test for github hacktues 12 please
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
