@@ -1,9 +1,9 @@
-﻿using Githubhacktues12please.Models.DTOs;
+﻿using Githubhacktues12please.Entities;
 
 namespace Githubhacktues12please.Services
 {
     public interface IMultiplyService
     {
-        MultiplierDTO MultyplyHz(decimal multiplier);
+        Hz MultyplyHz(float Hz, float multiplier);
     }
 }

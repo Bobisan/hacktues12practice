@@ -2,6 +2,6 @@
 {
     public class MultiplierDTO
     {
-        public decimal multiplier { get; set; }
+        public float Multiplier { get; set; }
     }
 }

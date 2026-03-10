@@ -38,40 +38,59 @@ canvas {
     display: flex;
     align-items: center;
     justify-content: center; /* ensures centered layout */
-    gap: 40px; /* more space between all controls */
+    gap: 100px; /* more space between all controls */
     /* let the flex container size itself naturally; centering is handled by .wrapper */
 }
 
-.toggle {
-    width: 140px;
-    height: 100px;
-    font-size: 1.2rem;
+/* When controls are wrapped in a <form>, the form is a single flex child by default
+   so its inner elements stack. Make the form a horizontal flex container so the
+   slider and buttons stay side-by-side. */
+.controls > form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    margin: 0; /* remove default form margins */
+    padding: 0;
+    background: transparent;
+    border: none;
 }
 
 .action-button {
-    width: 130px;
-    height: 100px;
+    width: 160px;
+    height: 120px;
     border-radius: 18px;
-    border: none;
+    /* make room for hover border effect */
+    border: 1px solid rgba(240,235,227,0.06);
+    border-bottom-width: 6px;
+    border-top-width: 1px;
     font-family: 'Monaco', monospace;
-    font-size: 1.2rem;
-    letter-spacing: 0.05em;
+    font-size: 1.8rem;
+    letter-spacing: .15em;
     cursor: pointer;
     background: #111213;
     color: #F0EBE3;
     transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
     .action-button:hover {
         background: #222;
         box-shadow: 0 0 12px rgba(240,235,227,0.2);
+        filter: brightness(1.2);
+        border-top-width: 6px;
+        border-bottom-width: 1px;
     }
 
 .slider-block {
     background: #111213;
     border-radius: 18px;
     width: 280px;
-    height: 90px;
+    height: 120px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -82,7 +101,8 @@ canvas {
 
 .value {
     font-family: 'Monaco',monospace;
-    font-size: 1.1rem;
+    font-size: 1.8rem;
+    letter-spacing: .15em;
     opacity: .9;
 }
 
@@ -106,17 +126,25 @@ canvas {
     }
 
 .toggle {
-    width: 120px;
-    height: 90px;
+    width: 160px;
+    height: 120px;
     border-radius: 18px;
-    border: none;
+    /* similar hover border effect */
+    border: 1px solid rgba(240,235,227,0.06);
+    border-bottom-width: 6px;
+    border-top-width: 1px;
     font-family: 'Monaco',monospace;
-    font-size: 1.1rem;
-    letter-spacing: .05em;
+    font-size: 1.8rem;
+    letter-spacing: .15em;
     cursor: pointer;
     background: #111213;
     color: #F0EBE3;
     transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
     .toggle.on {
@@ -132,7 +160,72 @@ canvas {
     right: 0;
     text-align: center;
     font-size: .65rem;
-    letter-spacing: .15em;
+    letter-spacing: .05em;
     text-transform: uppercase;
     color: rgba(240,235,227,.4);
+}
+
+/* Apply skew to create parallelogram shapes while keeping inner content normal.
+   Containers are skewed; inner text / inputs are counter-skewed. */
+.slider-block,
+.toggle,
+.action-button {
+    transform: skewX(-20deg);
+}
+
+/* Un-skew inner content so text and the slider appear normal */
+.slider-block .value,
+.action-button span,
+.toggle span {
+    transform: skewX(20deg);
+    display: inline-block; /* ensure transform applies to text */
+}
+
+/* Position the slider slightly higher so its centerline sits between the
+   numeric value above and the toggle beside it. Keep the counter-skew. */
+.slider-block input.slider {
+    transform: skewX(20deg) translateY(-8px);
+}
+
+.slider-block:hover,
+.action-button:hover {
+    filter: brightness(1.1);
+}
+
+/* Toggle hover should behave like the action button. When the toggle has
+   the .on class (clicked), hovering should still apply the visual hover
+   effects instead of 'breaking' them. */
+/* Toggle hover: different behavior when off vs on */
+/* Off (default dark) -> lighten slightly on hover (match action-button hover feel) */
+.toggle:hover:not(.on) {
+    filter: brightness(1.2);
+    background: #222;
+    border-top-width: 6px;
+    border-bottom-width: 1px;
+}
+
+/* On (white) -> darken slightly on hover to indicate hover while active */
+.toggle.on:hover {
+    filter: brightness(0.92);
+    /* slightly darker than full white */
+    background: #e6e2d7;
+    border-top-width: 6px;
+    border-bottom-width: 1px;
+}
+
+/* Keep the inner span un-skewed in all toggle states including :active and :focus */
+.toggle span,
+.toggle.on span,
+.toggle:active span,
+.toggle:focus span {
+    transform: skewX(20deg);
+    display: inline-block;
+}
+
+/* Decorative moving highlight span inside buttons */
+/* Ensure label text sits above any possible decorative layers */
+.action-button span,
+.toggle span {
+    z-index: 1;
+    position: relative;
 }
