@@ -7,8 +7,178 @@
   "targets": {
     ".NETCoreApp,Version=v8.0": {
       "Githubhacktues12please/1.0.0": {
+        "dependencies": {
+          "React.Web": "5.2.12",
+          "React.Web.Mvc4": "5.2.12"
+        },
         "runtime": {
           "Githubhacktues12please.dll": {}
+        }
+      },
+      "AdvancedStringBuilder/0.1.0": {
+        "runtime": {
+          "lib/netstandard2.0/AdvancedStringBuilder.dll": {
+            "assemblyVersion": "0.1.0.0",
+            "fileVersion": "0.1.0.0"
+          }
+        }
+      },
+      "JavaScriptEngineSwitcher.Core/3.1.0": {
+        "dependencies": {
+          "AdvancedStringBuilder": "0.1.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/JavaScriptEngineSwitcher.Core.dll": {
+            "assemblyVersion": "3.1.0.0",
+            "fileVersion": "3.1.0.0"
+          }
+        },
+        "resources": {
+          "lib/netstandard2.0/ru-ru/JavaScriptEngineSwitcher.Core.resources.dll": {
+            "locale": "ru-RU"
+          }
+        }
+      },
+      "JSPool/4.0.0": {
+        "dependencies": {
+          "JavaScriptEngineSwitcher.Core": "3.1.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/JSPool.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
+          }
+        }
+      },
+      "Microsoft.AspNet.Mvc/4.0.40804": {
+        "dependencies": {
+          "Microsoft.AspNet.Razor": "2.0.20710",
+          "Microsoft.AspNet.WebPages": "2.0.20710"
+        },
+        "runtime": {
+          "lib/net40/System.Web.Mvc.dll": {
+            "assemblyVersion": "4.0.0.1",
+            "fileVersion": "4.0.40804.0"
+          }
+        }
+      },
+      "Microsoft.AspNet.Razor/2.0.20710": {
+        "runtime": {
+          "lib/net40/System.Web.Razor.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.20710.0"
+          }
+        }
+      },
+      "Microsoft.AspNet.WebPages/2.0.20710": {
+        "dependencies": {
+          "Microsoft.AspNet.Razor": "2.0.20710",
+          "Microsoft.Web.Infrastructure": "1.0.0"
+        },
+        "runtime": {
+          "lib/net40/System.Web.Helpers.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.20710.0"
+          },
+          "lib/net40/System.Web.WebPages.Deployment.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.20710.0"
+          },
+          "lib/net40/System.Web.WebPages.Razor.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.20710.0"
+          },
+          "lib/net40/System.Web.WebPages.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.20710.0"
+          }
+        }
+      },
+      "Microsoft.DotNet.PlatformAbstractions/2.1.0": {
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.DotNet.PlatformAbstractions.dll": {
+            "assemblyVersion": "2.1.0.0",
+            "fileVersion": "2.1.0.0"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyModel/2.1.0": {
+        "dependencies": {
+          "Microsoft.DotNet.PlatformAbstractions": "2.1.0",
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "runtime": {
+          "lib/netstandard1.6/Microsoft.Extensions.DependencyModel.dll": {
+            "assemblyVersion": "2.1.0.0",
+            "fileVersion": "2.1.0.0"
+          }
+        }
+      },
+      "Microsoft.Web.Infrastructure/1.0.0": {
+        "runtime": {
+          "lib/net40/Microsoft.Web.Infrastructure.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.20105.407"
+          }
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.3.23909"
+          }
+        }
+      },
+      "React.Core/5.2.12": {
+        "dependencies": {
+          "JSPool": "4.0.0",
+          "JavaScriptEngineSwitcher.Core": "3.1.0",
+          "Microsoft.Extensions.DependencyModel": "2.1.0",
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/React.Core.dll": {
+            "assemblyVersion": "5.2.0.0",
+            "fileVersion": "5.2.12.29"
+          }
+        }
+      },
+      "React.Web/5.2.12": {
+        "dependencies": {
+          "Microsoft.Web.Infrastructure": "1.0.0",
+          "React.Core": "5.2.12",
+          "WebActivatorEx": "2.2.0"
+        },
+        "runtime": {
+          "lib/net40/React.Web.dll": {
+            "assemblyVersion": "5.2.0.0",
+            "fileVersion": "5.2.12.29"
+          }
+        }
+      },
+      "React.Web.Mvc4/5.2.12": {
+        "dependencies": {
+          "Microsoft.AspNet.Mvc": "4.0.40804",
+          "React.Core": "5.2.12",
+          "React.Web": "5.2.12"
+        },
+        "runtime": {
+          "lib/net40/React.Web.Mvc4.dll": {
+            "assemblyVersion": "5.2.0.0",
+            "fileVersion": "5.2.12.29"
+          }
+        }
+      },
+      "WebActivatorEx/2.2.0": {
+        "dependencies": {
+          "Microsoft.Web.Infrastructure": "1.0.0"
+        },
+        "runtime": {
+          "lib/net40/WebActivatorEx.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.2.0.0"
+          }
         }
       }
     }
@@ -18,6 +188,104 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AdvancedStringBuilder/0.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IbN3r5whlJvi8MhCDPVpIb+NVScyUcKSdcJZrnoXFDyzPDISl3AbWouNBYIHRdZdfGuzqCQEhM1vkxbIKqQVaQ==",
+      "path": "advancedstringbuilder/0.1.0",
+      "hashPath": "advancedstringbuilder.0.1.0.nupkg.sha512"
+    },
+    "JavaScriptEngineSwitcher.Core/3.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UbyvwC+aSYwV76FDEa/C59lVzgBVdAuP/F4YpNfv+Ev+HllqLBgEhj8Hzo0pAk7uUGQwUxVnQBAtsINMy29ysQ==",
+      "path": "javascriptengineswitcher.core/3.1.0",
+      "hashPath": "javascriptengineswitcher.core.3.1.0.nupkg.sha512"
+    },
+    "JSPool/4.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-r+AeQ9R50HxU+HLqASYvZz6Mvg7RmZwEnCVhQ+xGYVexFjYYqlkW6by9HaflGaHjy+/28YLbb3qxDLRJ3AbZGQ==",
+      "path": "jspool/4.0.0",
+      "hashPath": "jspool.4.0.0.nupkg.sha512"
+    },
+    "Microsoft.AspNet.Mvc/4.0.40804": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tQrw7I+Ol1Kr3kDKcA0XNT68ctjciLIUZqGtMBk7fNjEGUUVDifwlOJJXUBQxUayv4aHwB+OOiPFF3ZD6VXmRw==",
+      "path": "microsoft.aspnet.mvc/4.0.40804",
+      "hashPath": "microsoft.aspnet.mvc.4.0.40804.nupkg.sha512"
+    },
+    "Microsoft.AspNet.Razor/2.0.20710": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JkaLdzjXnjcd8JAaAAtahMtqORdBfX2pOlVdv7khq2hKBLqjdP+5q2LVLmbLecFGxoW9inDNjZKvwdVuiwFbZg==",
+      "path": "microsoft.aspnet.razor/2.0.20710",
+      "hashPath": "microsoft.aspnet.razor.2.0.20710.nupkg.sha512"
+    },
+    "Microsoft.AspNet.WebPages/2.0.20710": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bpWbVKW0RpM/XtTwZL7pjhuVqpaB/cHutR7W4YXLIXFMHHXilqzVxpFmyzwoIZVO1xmSdoelbDRBncIA5D24EA==",
+      "path": "microsoft.aspnet.webpages/2.0.20710",
+      "hashPath": "microsoft.aspnet.webpages.2.0.20710.nupkg.sha512"
+    },
+    "Microsoft.DotNet.PlatformAbstractions/2.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9KPDwvb/hLEVXYruVHVZ8BkebC8j17DmPb56LnqRF74HqSPLjCkrlFUjOtFpQPA2DeADBRTI/e69aCfRBfrhxw==",
+      "path": "microsoft.dotnet.platformabstractions/2.1.0",
+      "hashPath": "microsoft.dotnet.platformabstractions.2.1.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyModel/2.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nS2XKqi+1A1umnYNLX2Fbm/XnzCxs5i+zXVJ3VC6r9t2z0NZr9FLnJN4VQpKigdcWH/iFTbMuX6M6WQJcTjVIg==",
+      "path": "microsoft.extensions.dependencymodel/2.1.0",
+      "hashPath": "microsoft.extensions.dependencymodel.2.1.0.nupkg.sha512"
+    },
+    "Microsoft.Web.Infrastructure/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FNmvLn5m2LTU/Rs2KWVo0SIIh9Ek+U0ojex7xeDaSHw/zgEP77A8vY5cVWgUtBGS8MJfDGNn8rpXJWEIQaPwTg==",
+      "path": "microsoft.web.infrastructure/1.0.0",
+      "hashPath": "microsoft.web.infrastructure.1.0.0.nupkg.sha512"
+    },
+    "Newtonsoft.Json/12.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "path": "newtonsoft.json/12.0.3",
+      "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
+    },
+    "React.Core/5.2.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UqaxnMqVhQDLLNkIR4cNwJAR0lxdT8IwYl6iqXvw9+60uEcOXtbZIlD5TIHVsrenBaovNNsqJwE1ZqB/vEo+lg==",
+      "path": "react.core/5.2.12",
+      "hashPath": "react.core.5.2.12.nupkg.sha512"
+    },
+    "React.Web/5.2.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+q98Il5CJSOiPC2O+yy0czrD73bc78A459GYKcOAiFdln9zxpaRBIz9zdefmj7+P5XIhd8qG+Cb0oUw8158PKA==",
+      "path": "react.web/5.2.12",
+      "hashPath": "react.web.5.2.12.nupkg.sha512"
+    },
+    "React.Web.Mvc4/5.2.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-x+6Tt3bTXU9JQxthBl41fMy6ukNyiQrJQQPYaT62qGDFs0Lk9lZGs3hpE5INVfPXxDYYf67hUvbuK5aLKiVEjw==",
+      "path": "react.web.mvc4/5.2.12",
+      "hashPath": "react.web.mvc4.5.2.12.nupkg.sha512"
+    },
+    "WebActivatorEx/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LpTC82DGzFeqHjRGLvynZKRjjELcsED5f784N4IWEPZhPlJsVYQKVpxNUjNdcMV6YHMqRhEiqolr69UVaT4ciw==",
+      "path": "webactivatorex/2.2.0",
+      "hashPath": "webactivatorex.2.2.0.nupkg.sha512"
     }
   }
 }
