@@ -42,19 +42,19 @@ canvas {
     /* let the flex container size itself naturally; centering is handled by .wrapper */
 }
 
-/* When controls are wrapped in a <form>, the form is a single flex child by default
+    /* When controls are wrapped in a <form>, the form is a single flex child by default
    so its inner elements stack. Make the form a horizontal flex container so the
    slider and buttons stay side-by-side. */
-.controls > form {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 40px;
-    margin: 0; /* remove default form margins */
-    padding: 0;
-    background: transparent;
-    border: none;
-}
+    .controls > form {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+        margin: 0; /* remove default form margins */
+        padding: 0;
+        background: transparent;
+        border: none;
+    }
 
 .action-button {
     width: 160px;
@@ -173,59 +173,59 @@ canvas {
     transform: skewX(-20deg);
 }
 
-/* Un-skew inner content so text and the slider appear normal */
-.slider-block .value,
-.action-button span,
-.toggle span {
-    transform: skewX(20deg);
-    display: inline-block; /* ensure transform applies to text */
-}
+    /* Un-skew inner content so text and the slider appear normal */
+    .slider-block .value,
+    .action-button span,
+    .toggle span {
+        transform: skewX(20deg);
+        display: inline-block; /* ensure transform applies to text */
+    }
 
-/* Position the slider slightly higher so its centerline sits between the
+    /* Position the slider slightly higher so its centerline sits between the
    numeric value above and the toggle beside it. Keep the counter-skew. */
-.slider-block input.slider {
-    transform: skewX(20deg) translateY(-8px);
-}
+    .slider-block input.slider {
+        transform: skewX(20deg) translateY(-8px);
+    }
 
-.slider-block:hover,
-.action-button:hover {
-    filter: brightness(1.1);
-}
+    .slider-block:hover,
+    .action-button:hover {
+        filter: brightness(1.1);
+    }
 
-/* Toggle hover should behave like the action button. When the toggle has
+    /* Toggle hover should behave like the action button. When the toggle has
    the .on class (clicked), hovering should still apply the visual hover
    effects instead of 'breaking' them. */
-/* Toggle hover: different behavior when off vs on */
-/* Off (default dark) -> lighten slightly on hover (match action-button hover feel) */
-.toggle:hover:not(.on) {
-    filter: brightness(1.2);
-    background: #222;
-    border-top-width: 6px;
-    border-bottom-width: 1px;
-}
+    /* Toggle hover: different behavior when off vs on */
+    /* Off (default dark) -> lighten slightly on hover (match action-button hover feel) */
+    .toggle:hover:not(.on) {
+        filter: brightness(1.2);
+        background: #222;
+        border-top-width: 6px;
+        border-bottom-width: 1px;
+    }
 
-/* On (white) -> darken slightly on hover to indicate hover while active */
-.toggle.on:hover {
-    filter: brightness(0.92);
-    /* slightly darker than full white */
-    background: #e6e2d7;
-    border-top-width: 6px;
-    border-bottom-width: 1px;
-}
+    /* On (white) -> darken slightly on hover to indicate hover while active */
+    .toggle.on:hover {
+        filter: brightness(0.92);
+        /* slightly darker than full white */
+        background: #e6e2d7;
+        border-top-width: 6px;
+        border-bottom-width: 1px;
+    }
 
-/* Keep the inner span un-skewed in all toggle states including :active and :focus */
-.toggle span,
-.toggle.on span,
-.toggle:active span,
-.toggle:focus span {
-    transform: skewX(20deg);
-    display: inline-block;
-}
+    /* Keep the inner span un-skewed in all toggle states including :active and :focus */
+    .toggle span,
+    .toggle.on span,
+    .toggle:active span,
+    .toggle:focus span {
+        transform: skewX(20deg);
+        display: inline-block;
+    }
 
-/* Decorative moving highlight span inside buttons */
-/* Ensure label text sits above any possible decorative layers */
-.action-button span,
-.toggle span {
-    z-index: 1;
-    position: relative;
-}
+    /* Decorative moving highlight span inside buttons */
+    /* Ensure label text sits above any possible decorative layers */
+    .action-button span,
+    .toggle span {
+        z-index: 1;
+        position: relative;
+    }
