@@ -5,6 +5,8 @@ using Githubhacktues12please.Services;
 using Microsoft.AspNetCore.Mvc;
 using MySql.Data.MySqlClient;
 using System.Diagnostics;
+using IronPython.Hosting;
+using System.Collections.Generic;
 
 namespace Githubhacktues12please.Controllers
 {
@@ -32,14 +34,19 @@ namespace Githubhacktues12please.Controllers
         [HttpPost]
         public IActionResult UpdateHz(MultiplierDTO dto)
         {
-            con.Open();
             Hz result = _multiplierService.MultyplyHz(Hz, dto.Multiplier);
+            var engine = Python.CreateEngine();
+            var scope = engine.CreateScope();
+            con.Open();
             MySqlCommand cmd = new MySqlCommand("INSERT INTO `data` (value, description) VALUES (@value, @description);", con);
             cmd.Parameters.AddWithValue("@value", result.hz);
             cmd.Parameters.AddWithValue("@description", $"Multiplied {Hz} by {dto.Multiplier} to get {result.hz}");
             cmd.ExecuteNonQuery();
             con.Close();
-            con.Close();
+            List<string> args = new List<string> { "args1", "args2", "args3" };
+            //Need to add python scripts in the folder and then implement the send script
+            engine.GetSysModule().SetVariable("argv", args);
+            engine.ExecuteFile("", scope);
             return RedirectToAction("Index");
         }
 
